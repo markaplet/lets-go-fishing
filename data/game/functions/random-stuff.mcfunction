@@ -11,3 +11,11 @@ give @p minecraft:dark_oak_sign{BlockEntityTag:{Text1:'{"text":"","clickEvent":{
 give @p minecraft:dark_oak_sign{BlockEntityTag:{Text1:'{"text":"Difficulty","clickEvent":{"action":"run_command","value":"scoreboard players set difficulty GameState 1"},"bold":true,"color":"gold"}',Text2:'{"text":""}',Text3:'{"text":"Easy\'ish","bold":true,"color":"light_purple"}'},display:{Name:'{"text":"Custom Sign"}'}}
 
 ## NOTE: Difficulty block data hard set to test location
+
+scoreboard players set debug GameState 0
+
+give @p minecraft:dark_oak_sign{BlockEntityTag:{Text1:'{"text":"Debug","clickEvent":{"action":"run_command","value":"scoreboard players set debug GameState 0"},"bold":true,"color":"gold"}',Text2:'{"text":""}',Text3:'{"text":"False","bold":true,"color":"light_purple"}'},display:{Name:'{"text":"Custom Sign"}'}}
+
+data merge block ~ ~1 ~ {Text1:'{"text":"Debug : False","clickEvent":{"action":"run_command","value":"summon"}}'}
+
+give @p minecraft:birch_sign{BlockEntityTag:{Text1:'{"text":"Debug : False","clickEvent":{"action":"run_command","value":"scoreboard players set debug GameState 0"}}'},display:{Name:'{"text":"Custom Sign"}'}}
