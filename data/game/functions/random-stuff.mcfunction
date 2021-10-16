@@ -10,4 +10,4 @@ give @p minecraft:dark_oak_sign{BlockEntityTag:{Text1:'{"text":"","clickEvent":{
 ## Difficulty: Easyish
 give @p minecraft:dark_oak_sign{BlockEntityTag:{Text1:'{"text":"Difficulty","clickEvent":{"action":"run_command","value":"scoreboard players set difficulty GameState 1"},"bold":true,"color":"gold"}',Text2:'{"text":""}',Text3:'{"text":"Easy\'ish","bold":true,"color":"light_purple"}'},display:{Name:'{"text":"Custom Sign"}'}}
 
-scoreboard players set difficulty GameState 1
+## NOTE: Difficulty block data hard set to test location
