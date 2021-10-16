@@ -3,7 +3,7 @@
 #  ------------------------------------
 
 ## Debug output
-tellraw @a[gamemode=creative] ["",{"text":"Debug:","color":"light_purple"},{"text":" Gamestate 2 - Reset scores"}]
+execute if score debug GameState matches 1 run tellraw @a[gamemode=creative] ["",{"text":"Debug:","color":"light_purple"},{"text":" Gamestate 2 - Reset scores"}]
 
 ## Reset countdown timer so it can be reused again
 scoreboard players set countdown GameState 81
