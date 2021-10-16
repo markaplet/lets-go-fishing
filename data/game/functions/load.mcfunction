@@ -1,14 +1,17 @@
+#  ------------------------------------
+#  Load Base Game States
+#  ------------------------------------
 
+## Create a GamesState scoreboard for managing behind the scenes score keeping
 scoreboard objectives add GameState dummy
-tellraw @a ["",{"text":"Scoreboard:","color":"red"},{"text":" GameState","color":"green"},{"text":" added"}]
 
+## Initialize base scoreboard values
+scoreboard players set dummy GameState 0
+scoreboard players set countdown GameState 81
+scoreboard players set difficulty GameState 1
 
-scoreboard objectives add countdown dummy
-scoreboard players set countdown countdown 81
-tellraw @a ["",{"text":"Scoreboard:","color":"red"},{"text":" countdown","color":"green"},{"text":" added"}]
+## Announce that scoreboard was added
+tellraw @a ["",{"text":"Scoreboard:"},{"text":" GameState","color":"green"},{"text":" added"}]
 
-scoreboard objectives add dificulty dummy
-scoreboard players set dificulty dificulty 1
-tellraw @a ["",{"text":"Scoreboard:","color":"red"},{"text":" countdown","color":"green"},{"text":" added"}]
-
+## Announce that game was successfully loaded
 tellraw @a "Game Loaded"
