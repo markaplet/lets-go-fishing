@@ -1,0 +1,1 @@
+This data pack attempts to update my mini game "Lets go Fishing" to 1.17 mcfunctions. The original was built using command blocks in 1.11 (5 years prior). Overall, the data pack is a mostly 1:1 conversion of the original game.
