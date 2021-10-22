@@ -3,7 +3,7 @@
 #  ------------------------------------
 
 ## Debug Output
-execute if score debug GameState matches 1 run tellraw @a[gamemode=creative] ["",{"text":"Debug:","color":"light_purple"},{"text":" Gamestate 3 - Match Running"}]
+execute if score debug GameState matches 1 run tellraw @a[gamemode=creative] ["",{"text":"Debug:","color":"light_purple"},{"text":" Gamestate 4 - Match Running"}]
 
 ## Item Teleportation
 execute at @e[type=armor_stand,tag=cb_north] as @e[type=!armor_stand,distance=..1] at @s run tp @s ~ ~ ~-0.1
@@ -43,3 +43,5 @@ execute at @e[type=fishing_bobber,tag=red_bobber] as @e[type=sheep,distance=..1.
 #execute if entity @a[team=purple] run execute as @e[type=fishing_bobber] run tag @s add purple_bobber
 #execute at @e[type=fishing_bobber,tag=purple_bobber] as @e[type=sheep,distance=..1.1,limit=1] run scoreboard players add Purple_Team catch 1
 #execute at @e[type=fishing_bobber,tag=purple_bobber] as @e[type=sheep,distance=..1.1,limit=1] run teleport @s ~ -500 ~
+
+## If there are no more sheep to be caught end the match and advance to game state 5

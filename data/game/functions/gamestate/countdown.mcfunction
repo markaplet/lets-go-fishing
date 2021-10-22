@@ -1,9 +1,9 @@
 #  ------------------------------------
-#  GameState scoreboard matches 3
+#  GameState scoreboard matches 2
 #  ------------------------------------
 
 ## Debug output
-execute if score debug GameState matches 1 run tellraw @a[gamemode=creative] ["",{"text":"Debug:","color":"light_purple"},{"text":" Gamestate 1 - Countdown"}]
+execute if score debug GameState matches 1 run tellraw @a[gamemode=creative] ["",{"text":"Debug:","color":"light_purple"},{"text":" Gamestate 2 - Countdown"}]
 
 title @a times 0 0 20
 execute if score countdown GameState matches 81 run title @a title [{"text":"3"}] 
