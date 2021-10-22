@@ -1,5 +1,5 @@
 #  ------------------------------------
-#  GameState scoreboard matches 1
+#  GameState scoreboard matches 3
 #  ------------------------------------
 
 ## Debug output
@@ -19,7 +19,7 @@ execute if score countdown GameState matches 41 run playsound minecraft:entity.e
 execute if score countdown GameState matches 21 run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 10000
 
 ## Set the game state to 2
-execute if score countdown GameState matches 1 run scoreboard players set dummy GameState 2
+execute if score countdown GameState matches 1 run scoreboard players set dummy GameState 3
 
 ## Countdown starts at 81. Remove 1 every tick so we can display countdown timer
 scoreboard players remove countdown GameState 1
