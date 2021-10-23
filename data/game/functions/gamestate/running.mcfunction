@@ -24,10 +24,13 @@ execute at @e[type=armor_stand,tag=cb_west] as @e[type=!armor_stand,distance=..1
 # Kill the sheep
 # Kill the bobber
 
+
+
 #  ------------------------------------
 #  Red team caught a sheep
 #  ------------------------------------
-execute if entity @a[team=red] run execute as @e[type=fishing_bobber,limit=1,sort=nearest] run tag @s add red_bobber
+execute if entity @a[team=red] run execute as @e[type=fishing_bobber,tag=!used_bobber,limit=1,sort=nearest] run tag @s add red_bobber
+execute if entity @a[team=red] run execute as @e[type=fishing_bobber,tag=!used_bobber,limit=1,sort=nearest] run tag @s add used_bobber
 execute as @e[type=fishing_bobber,tag=red_bobber] at @s if entity @e[type=sheep,distance=..1.04,limit=1] run tag @s add kill_bobber
 execute if entity @e[type=fishing_bobber,tag=red_bobber,tag=kill_bobber] run scoreboard players add Red_Team catch 1
 execute as @e[type=fishing_bobber,tag=red_bobber] at @s run kill @e[type=sheep,distance=..1.04,limit=1]
@@ -36,7 +39,8 @@ kill @e[tag=kill_bobber,tag=red_bobber]
 #  ------------------------------------
 #  Orange team caught a sheep
 #  ------------------------------------
-execute if entity @a[team=orange] run execute as @e[type=fishing_bobber,limit=1,sort=nearest] run tag @s add orange_bobber
+execute if entity @a[team=orange] run execute as @e[type=fishing_bobber,tag=!used_bobber,limit=1,sort=nearest] run tag @s add orange_bobber
+execute if entity @a[team=orange] run execute as @e[type=fishing_bobber,tag=!used_bobber,limit=1,sort=nearest] run tag @s add used_bobber
 execute as @e[type=fishing_bobber,tag=orange_bobber] at @s if entity @e[type=sheep,distance=..1.04,limit=1] run tag @s add kill_bobber
 execute if entity @e[type=fishing_bobber,tag=orange_bobber,tag=kill_bobber] run scoreboard players add Red_Team catch 1
 execute as @e[type=fishing_bobber,tag=orange_bobber] at @s run kill @e[type=sheep,distance=..1.04,limit=1]
