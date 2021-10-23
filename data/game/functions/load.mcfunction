@@ -7,6 +7,7 @@
 #scoreboard players set countdown GameState 81
 #scoreboard players set difficulty GameState 1
 #scoreboard players set debug GameState 1
+#scoreboard objectives add bobber_timer dummy
 
 ## Announce that game was successfully loaded
 tellraw @a "Game Loaded"
