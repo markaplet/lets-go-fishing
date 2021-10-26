@@ -13,9 +13,9 @@ scoreboard objectives add left_game minecraft.custom:minecraft.leave_game
 ## Announce that scoreboard was added
 tellraw @a [{"text":"Scoreboards added","color":"green"}]
 
+#  ------------------------------------
 #  Add team colors 
 #  ------------------------------------
-
 ## Create teams by color
 team add red
 team add purple

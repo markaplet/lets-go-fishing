@@ -41,6 +41,7 @@ execute as @a at @s if block ~ ~-1 ~ minecraft:lime_wool run team join green @s
 execute as @a at @s if block ~ ~-1 ~ minecraft:orange_wool run team join orange @s
 
 ## Game state 4
+execute if score dummy GameState matches 5 run function game:gamestate/winner
 # Calculate scores
 # /scoreboard players operation #whoWon scores > @e[tag=score] scores
 # /scoreboard players operation @e[tag=score] scores -= #whoWon scores
@@ -49,5 +50,3 @@ execute as @a at @s if block ~ ~-1 ~ minecraft:orange_wool run team join orange 
 
 ## Game State 99 is for placing conveyors
 execute if score dummy GameState matches 99 run function game:misc/utility_conveyor
-
-#execute as @a[team=red] run data merge entity @e[type=minecraft:fishing_bobber,limit=1,distance=..2] {Tags:["red_bobber"]}

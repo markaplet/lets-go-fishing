@@ -61,3 +61,13 @@ execute as @e[type=fishing_bobber] run tag @s add red_bobber
 
 
 #execute if entity @a[team=red] run execute as @e[type=fishing_bobber] run tag @s add red_bobber
+
+
+#https://insidedarkweb.com/arqade/execute-as-selector-if-nearest-entity-has-a-tag/
+#execute
+#  as @e[type=armor_stand,limit=1]      # ARMOUR STAND NOW HAS CONTROL
+#  at @s                                # Move the location to me.
+#  as @e[type=pig,limit=1,sort=nearest] # NEAREST PIG NOW HAS CONTROL
+#  if entity @s[tag=carrot]             # If I have the tag carrot, continue to the next step, otherwise stop.
+#  as @e[type=armor_stand,limit=1]      # ARMOUR STAND NOW HAS CONTROL
+#say The nearest pig to me has the carrot tag!
