@@ -3,7 +3,7 @@
 #  ------------------------------------
 
 ## Defults to lobby mode
-scoreboard players set dummy GameState 0
+#scoreboard players set dummy GameState 0
 
 ## Ensure the countdown timer is set to incase the game was reloaded mid countdown
 scoreboard players set countdown GameState 81

@@ -1,8 +1,7 @@
-#TODO: Remove debugging chat
-execute as @s run say Orange Player Cast
-execute as @s at @s as @e[type=fishing_bobber,distance=..3,limit=1] run tag @e[type=fishing_bobber,tag=!red_bobber,limit=1] add orange_bobber
-scoreboard players set @s use_rod 0
-execute as @e[type=fishing_bobber,tag=orange_bobber,limit=1] at @s as @e[type=sheep,limit=1,sort=nearest] run tag @e[type=sheep,limit=1] add orange_caugh
+say orange team score
+
+tag @e[type=sheep,distance=..1.09,sort=nearest,limit=1] add orange_caught
+kill @e[type=fishing_bobber,distance=..1.09,sort=nearest]
+kill @e[type=sheep,distance=..1.09,limit=1]
+tp @s ~ ~-200 ~ 
 scoreboard players add Orange_Team catch 1
-execute as @e[type=sheep,tag=orange_caught,limit=1] at @s run tp ~ ~-200 ~
-scoreboard players set @s use_rod 0
