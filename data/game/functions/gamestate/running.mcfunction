@@ -14,14 +14,17 @@ execute at @e if block ~ ~-1.1 ~ minecraft:magenta_glazed_terracotta[facing=west
 ## Players must stand on color wool blocks when casting.
 execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ red_wool run function game:misc/red_cast
 execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ orange_wool run function game:misc/orange_cast
+execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ purple_wool run function game:misc/purple_cast
+execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ lime_wool run function game:misc/green_cast
 
 ## Sheep Caught
 execute as @e[type=fishing_bobber,tag=red_bobber] at @s if entity @e[type=sheep,distance=..1.09] run function game:misc/caught_sheep_red
 execute as @e[type=fishing_bobber,tag=orange_bobber] at @s if entity @e[type=sheep,distance=..1.09] run function game:misc/caught_sheep_orange
+execute as @e[type=fishing_bobber,tag=purple_bobber] at @s if entity @e[type=sheep,distance=..1.09] run function game:misc/caught_sheep_purple
+execute as @e[type=fishing_bobber,tag=green_bobber] at @s if entity @e[type=sheep,distance=..1.09] run function game:misc/caught_sheep_green
 
 ## Kill any bobbers that are on the ground. Don't want players cheating.
 execute as @e[type=fishing_bobber,nbt={OnGround:1b}] run kill @s
 
-
 ## If there are no more sheep to be caught end the match and advance to game state 5
-#execute unless entity @e[type=sheep] run scoreboard players set dummy GameState 5
+execute unless entity @e[type=sheep] run scoreboard players set dummy GameState 5
