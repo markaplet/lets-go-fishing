@@ -11,7 +11,6 @@ execute if score countdown GameState matches 61 run title @a title [{"text":"2"}
 execute if score countdown GameState matches 41 run title @a title [{"text":"1"}]
 execute if score countdown GameState matches 21 run title @a title {"text":"GO!","color":"green"}
 
-
 ## Play a little tune with the timer
 execute if score countdown GameState matches 81 run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 10000
 execute if score countdown GameState matches 61 run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 10000

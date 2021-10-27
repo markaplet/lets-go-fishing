@@ -2,7 +2,6 @@
 #  GameState scoreboard matches 1
 #  ------------------------------------
 
-
 ## Debug output
 execute if score debug GameState matches 1 run tellraw @a[gamemode=creative] ["",{"text":"Debug:","color":"light_purple"},{"text":" Gamestate 1 - Reset Team Scores"}]
 
