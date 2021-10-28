@@ -10,6 +10,16 @@ give @p minecraft:dark_oak_sign{BlockEntityTag:{Text1:'{"text":"","clickEvent":{
 ## Difficulty: Easyish
 give @p minecraft:dark_oak_sign{BlockEntityTag:{Text1:'{"text":"Difficulty","clickEvent":{"action":"run_command","value":"scoreboard players set difficulty GameState 1"},"bold":true,"color":"gold"}',Text2:'{"text":""}',Text3:'{"text":"Easy\'ish","bold":true,"color":"light_purple"}'},display:{Name:'{"text":"Custom Sign"}'}}
 
+## Easy v2
+give @p minecraft:dark_oak_sign{BlockEntityTag:{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function game:difficulty/hard"}}',Text2:'{"text":"Difficulty","color":"yellow"}',Text3:'{"text":"Easy","color":"green"}'},display:{Name:'{"text":"difficulty_easy"}'}}
+
+data merge block ~ ~1 ~ {Text1:'{"text":"","clickEvent":{"action":"run_command","value":"function game:difficulty/hard"}}',Text2:'{"text":"Difficulty","color":"yellow"}',Text3:'{"text":"Easy","color":"green"}'}
+
+## Start Match
+give @p minecraft:dark_oak_sign{BlockEntityTag:{Text1:'{"text":"","clickEvent":{"action":"run_command","value":"scoreboard players set dummy GameState 1"}}',Text2:'{"text":"\\u1368 Start Match \\u1368","color":"yellow"}',Text3:'{"text":"click here","color":"aqua"}'},display:{Name:'{"text":"StartGame"}'}}
+
+data merge block ~ ~1 ~ {Text1:'{"text":"","clickEvent":{"action":"run_command","value":"scoreboard players set dummy GameState 1"}}',Text2:'{"text":"\\u1368 Start Match \\u1368","color":"yellow"}',Text3:'{"text":"click here","color":"aqua"}'}
+
 ## NOTE: Difficulty block data hard set to test location
 
 scoreboard players set debug GameState 0

@@ -3,6 +3,7 @@
 ## Remove 1 from the effect timmer every tick.
 scoreboard players remove effects_timer GameState 1
 
+# Flying sheep get slow fall
 effect give @e[tag=go_fish,nbt={OnGround:0b}] slow_falling 1 5 true
 
 ## Random effects to entities
