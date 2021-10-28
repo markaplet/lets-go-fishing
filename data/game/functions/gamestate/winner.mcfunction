@@ -12,7 +12,7 @@ scoreboard players operation $who_won catch > Purple_Team catch
 scoreboard players operation $who_won catch > Green_Team catch
 
 ## Winner Title
-title @a times 20 80 20
+title @a times 20 100 20
 title @a title {"text":"The winner is","color":"white"}
 
 ## Announce the winning team
