@@ -5,6 +5,8 @@
 ## Debug Output
 execute if score debug GameState matches 1 run tellraw @a[gamemode=creative] ["",{"text":"Debug:","color":"light_purple"},{"text":" Gamestate 5 - Winners"}]
 
+effect clear @a
+
 ## Scoreboard operation to determine who won the match
 scoreboard players operation $who_won catch > Red_Team catch
 scoreboard players operation $who_won catch > Orange_Team catch
