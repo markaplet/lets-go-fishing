@@ -11,7 +11,9 @@ scoreboard players set Purple_Team catch 0
 scoreboard players set Green_Team catch 0
 scoreboard players set Orange_Team catch 0
 
+## Reset game timers
 scoreboard players set countdown GameState 81
+scoreboard players set effects_timer GameState 100
 
 ## Move to gamestate 2 - Countdown
 scoreboard players set dummy GameState 2

@@ -26,5 +26,7 @@ execute as @e[type=fishing_bobber,tag=green_bobber] at @s if entity @e[type=shee
 ## Kill any bobbers that are on the ground. Don't want players cheating.
 execute as @e[type=fishing_bobber,nbt={OnGround:1b}] run kill @s
 
+execute if score difficulty GameState matches 3 run function game:misc/random_effects
+
 ## If there are no more sheep to be caught end the match and advance to game state 5
 execute unless entity @e[type=sheep] run scoreboard players set dummy GameState 5
