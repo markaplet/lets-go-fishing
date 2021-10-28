@@ -24,5 +24,13 @@ execute if score Green_Team catch = $who_won catch run title @a subtitle ["",{"t
 ## Reset the who_won player 
 scoreboard players reset $who_won catch
 
+#playsound minecraft:ui.toast.challenge_complete master @a ~ ~ ~ 10000 1
+playsound minecraft:entity.firework_rocket.twinkle_far master @a ~ ~ ~ 10000 1
+
+## Fireworks over map
+summon armor_stand 8 4 17 {NoGravity:1b,Tags:["fireworks"]}
+execute as @e[tag=fireworks] at @s run function game:misc/fireworks
+kill @e[tag=fireworks]
+
 ## Move game state back to the lobby
 scoreboard players set dummy GameState 0
