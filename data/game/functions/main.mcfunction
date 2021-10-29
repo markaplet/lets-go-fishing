@@ -38,7 +38,7 @@ execute if score dummy GameState matches 4 run function game:gamestate/running
 execute as @a at @s if block ~ ~-1 ~ minecraft:purple_wool run team join purple @s
 execute as @a at @s if block ~ ~-1 ~ minecraft:red_wool run team join red @s
 execute as @a at @s if block ~ ~-1 ~ minecraft:lime_wool run team join green @s
-execute as @a at @s if block ~ ~-1 ~ minecraft:orange_wool run team join orange @s
+execute as @a at @s if block ~ ~-1 ~ minecraft:yellow_wool run team join gold @s
 
 ## Game state 4
 execute if score dummy GameState matches 5 run function game:gamestate/winner

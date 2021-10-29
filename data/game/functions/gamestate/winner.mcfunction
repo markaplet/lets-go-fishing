@@ -9,7 +9,7 @@ effect clear @a
 
 ## Scoreboard operation to determine who won the match
 scoreboard players operation $who_won catch > Red_Team catch
-scoreboard players operation $who_won catch > Orange_Team catch
+scoreboard players operation $who_won catch > Gold_Team catch
 scoreboard players operation $who_won catch > Purple_Team catch
 scoreboard players operation $who_won catch > Green_Team catch
 
@@ -19,7 +19,7 @@ title @a title {"text":"The winner is","color":"white"}
 
 ## Announce the winning team
 execute if score Red_Team catch = $who_won catch run title @a subtitle ["",{"text":"Red Team","color":"red"}]
-execute if score Orange_Team catch = $who_won catch run title @a subtitle ["",{"text":"Orange Team","color":"gold"}]
+execute if score Gold_Team catch = $who_won catch run title @a subtitle ["",{"text":"Gold Team","color":"gold"}]
 execute if score Purple_Team catch = $who_won catch run title @a subtitle ["",{"text":"Purple Team","color":"light_purple"}]
 execute if score Green_Team catch = $who_won catch run title @a subtitle ["",{"text":"Green Team","color":"green"}]
 

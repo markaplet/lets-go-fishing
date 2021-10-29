@@ -20,25 +20,25 @@ tellraw @a [{"text":"Scoreboards added","color":"green"}]
 team add red
 team add purple
 team add green
-team add orange
+team add gold
 
 ## Assign color to teams
 team modify red color red
 team modify purple color light_purple
 team modify green color green
-team modify orange color gold
+team modify gold color gold
 
 ## Add fake players to teams. (Labels visible in sidebar)
 team join red Red_Team
 team join purple Purple_Team
 team join green Green_Team
-team join orange Orange_Team
+team join gold Gold_Team
 
 ## Add fake players to teams
 scoreboard players add Red_Team catch 0
 scoreboard players add Purple_Team catch 0
 scoreboard players add Green_Team catch 0
-scoreboard players add Orange_Team catch 0
+scoreboard players add Gold_Team catch 0
 
 ## Display Sheep Caught on sidebar
 scoreboard objectives setdisplay sidebar caught 

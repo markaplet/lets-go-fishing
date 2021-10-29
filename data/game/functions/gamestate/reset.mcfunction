@@ -9,7 +9,7 @@ execute if score debug GameState matches 1 run tellraw @a[gamemode=creative] [""
 scoreboard players set Red_Team catch 0
 scoreboard players set Purple_Team catch 0
 scoreboard players set Green_Team catch 0
-scoreboard players set Orange_Team catch 0
+scoreboard players set Gold_Team catch 0
 
 ## Reset game timers
 scoreboard players set countdown GameState 81
