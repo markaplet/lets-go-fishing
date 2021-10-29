@@ -12,8 +12,8 @@ execute if score effects_timer GameState matches 42 run execute as @e[limit=1,ta
 execute if score effects_timer GameState matches 30 run execute as @e[limit=1,tag=go_fish,sort=random] at @s run tp ~ ~1 ~
 
 ## Random effects to players
-execute if score effects_timer GameState matches 42 run effect give @r nausea 15 200
-execute if score effects_timer GameState matches 20 run effect give @r levitation 1 1
+execute if score effects_timer GameState matches 42 run effect give @r[gamemode=!creative] nausea 15 200 false
+execute if score effects_timer GameState matches 20 run effect give @r[gamemode=!creative] levitation 1 1 false
 
 ## Reset the timer for 30 seconds
 execute if score effects_timer GameState matches 1 run scoreboard players set effects_timer GameState 100
