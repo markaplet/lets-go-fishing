@@ -23,6 +23,9 @@ execute as @e[type=fishing_bobber,tag=gold_bobber] at @s if entity @e[type=sheep
 execute as @e[type=fishing_bobber,tag=purple_bobber] at @s if entity @e[type=sheep,distance=..1.09] run function game:misc/caught_sheep_purple
 execute as @e[type=fishing_bobber,tag=green_bobber] at @s if entity @e[type=sheep,distance=..1.09] run function game:misc/caught_sheep_green
 
+## Effect applied to random players and sheep
+execute if score difficulty GameState matches 3 run function game:misc/random_effects
+
 ## Kill any bobbers that are on the ground. Don't want players cheating.
 execute as @e[type=fishing_bobber,nbt={OnGround:1b}] run kill @s
 

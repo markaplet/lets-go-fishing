@@ -9,4 +9,4 @@ data merge block 10 13 -10 {Text1:'{"text":"","clickEvent":{"action":"run_comman
 tellraw @a[gamemode=creative] ["",{"text":" Game Difficulty set to: "},{"text":"Hard'ish","color":"light_purple"}]
 
 ## Update GameState Scorebord
-scoreboard players set difficulty GameState 2
+scoreboard players set difficulty GameState 3
