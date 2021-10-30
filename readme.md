@@ -32,11 +32,9 @@ In the version, there are only a few implemented options. They are as follows:
 
 ## Issues
 * Ties are not announced as a draw. Only one team will display as the winner in the title. (WIP)
-
+  
 ## Todo
-* Add Hard mode to disable the CastMaster auto catch system.
-* Add sign system for changing floor patterns, or change the pattern randomly when the match starts
-* Add speed boost zones where sheep accelerate on the conveyors.
+* rewrite license book to include rules and more game info.
 
 ### Additional dificulties
 * Add harder dificulties such as fish, endermite, chicken
