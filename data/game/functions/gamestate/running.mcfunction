@@ -12,10 +12,10 @@ execute at @e if block ~ ~-1.1 ~ minecraft:magenta_glazed_terracotta[facing=sout
 execute at @e if block ~ ~-1.1 ~ minecraft:magenta_glazed_terracotta[facing=west] run tp @e[distance=..0.1] ~0.2 ~ ~
 
 ## Players must stand on color wool blocks when casting.
-execute unless score difficulty GameState matches 3 run execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ red_wool run function game:misc/red_cast
-execute unless score difficulty GameState matches 3 run execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ yellow_wool run function game:misc/gold_cast
-execute unless score difficulty GameState matches 3 run execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ purple_wool run function game:misc/purple_cast
-execute unless score difficulty GameState matches 3 run execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ green_wool run function game:misc/green_cast
+execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ red_wool run function game:misc/red_cast
+execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ yellow_wool run function game:misc/gold_cast
+execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ purple_wool run function game:misc/purple_cast
+execute as @a[scores={use_rod=1..}] at @s if block ~ ~-1 ~ green_wool run function game:misc/green_cast
 
 ## Sheep Caught
 execute as @e[type=fishing_bobber,tag=red_bobber] at @s if entity @e[type=sheep,distance=..1.09] run function game:misc/caught_sheep_red
