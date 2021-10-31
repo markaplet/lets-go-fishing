@@ -20,7 +20,7 @@ execute if score dummy GameState matches 4 run function game:gamestate/running
 ## Players choose team by fishing from 1 of 4 designated areas.
 execute as @a at @s if block ~ ~-1 ~ minecraft:purple_wool run team join purple @s
 execute as @a at @s if block ~ ~-1 ~ minecraft:red_wool run team join red @s
-execute as @a at @s if block ~ ~-1 ~ minecraft:lime_wool run team join green @s
+execute as @a at @s if block ~ ~-1 ~ minecraft:green_wool run team join green @s
 execute as @a at @s if block ~ ~-1 ~ minecraft:yellow_wool run team join gold @s
 
 ## Game state 4
