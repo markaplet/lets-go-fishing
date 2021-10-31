@@ -27,16 +27,13 @@ In the version, there are only a few implemented options. They are as follows:
 ## Difficulty
 
 * Easy: Large Adult Wool Trout, Uses the patented CastGrappler™ auto grappling system to automatically (and instantly) real the trout into the scoreing zone.
-* Hard'ish: Baby Wool Trout, with patened CastGrappler™
+* Medium: Baby Wool Trout, with patened CastGrappler™
 * Hard: Baby Wool Trout and CastGrappler™ is disabled. Wool Trout are not automatically caught. Instead, anglers must reel their catch into the catch zone like a Marlin. This is much more difficult than it seems, but I have managed to catch all 21 Wool Trout in approx ~3 minutes.
 
 ## Issues
 * Ties are not announced as a draw. Only one team will display as the winner in the title. (WIP)
   
 ## Todo
-* rewrite license book to include rules and more game info.
-
 ### Additional dificulties
 * Add harder dificulties such as fish, endermite, chicken
-* Add random effects around course such as levitation and speed
 * teleport mode where every 10 seconds the sheep randomize location (maybe spreadplayers?)
