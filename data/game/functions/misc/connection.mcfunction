@@ -8,8 +8,9 @@ give @s written_book{pages:['["",{"text":"Fishing License","bold":true,"color":"
 give @s fishing_rod{display:{Name:'{"text":"Castmaster 3000","color":"aqua"}',Lore:['{"text":"Registered Trademark 2021 Hogbits Inc."}']},Unbreakable:1b,Enchantments:[{id:"minecraft:luck_of_the_sea",lvl:1s}]} 1
 
 ## Teleport the player top the map.
-tp @s 10 12 -5
+tp @s 10 12 -7 0 0
 
+gamemode adventure @s
 
 title @s[scores={connection=1..}] title [{"text":"Let's Go Fishing","bold":true,"color":"dark_red"}]
 title @s[scores={connection=1..}] subtitle [{"text":"\u2744 Holiday Edition \u2744"}]
