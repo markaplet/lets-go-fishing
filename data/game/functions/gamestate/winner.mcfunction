@@ -36,3 +36,5 @@ kill @e[tag=fireworks]
 
 ## Move game state back to the lobby
 scoreboard players set dummy GameState 0
+
+function game:misc/stop-round
