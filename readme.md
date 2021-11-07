@@ -8,6 +8,9 @@ The fish in these parts are unlike any other. Ya see, way up here in the north i
 
 HamCrafter Classic is an annual event held around Christmas. Anglers compete head to head trying to catch the most Wool Trout. The angler with the most Wool Trout can win big, taking home the pride and satisfaction of knowing that you're the best, and the ability to gloat and boast amongst your fellow anglers.
 
+## How to play
+The game is pretty simple. Choose a game dificulty by clicking the sign on the showman near the red teams fishing area. To start a round, click the start sign to the right of any team fishing area. Stand on your teams color and cast your bobber in an attempt to catch wooly trout. If you are not standing on your teams color the wool trout will not be landed. The team with the most fish wins.
+
 ## Rules
 
 * Best played on a server with 2 or more players.
@@ -20,15 +23,11 @@ HamCrafter Classic is an annual event held around Christmas. Anglers compete hea
 
 **May the fur be with you!**
 
-## Game Options
-
-In the version, there are only a few implemented options. They are as follows:
-
 ## Difficulty
 
 * Easy: Large Adult Wool Trout, Uses the patented CastGrappler™ auto grappling system to automatically (and instantly) real the trout into the scoreing zone.
 * Medium: Baby Wool Trout, with patened CastGrappler™
-* Hard: Baby Wool Trout and CastGrappler™ is disabled. Wool Trout are not automatically caught. Instead, anglers must reel their catch into the catch zone like a Marlin. This is much more difficult than it seems, but I have managed to catch all 21 Wool Trout in approx ~3 minutes.
+* Hard: Baby Wool Trout will occasionally jump avoiding being caught. Anglers may occasionally get nausia and light headed. 
 
 ## Issues
 * Ties are not announced as a draw. Only one team will display as the winner in the title. (WIP)
